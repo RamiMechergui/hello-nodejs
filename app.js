@@ -4,7 +4,7 @@ const app = express();
 var response;
 
 app.get('/', function (req, res) {
-    response = 'This is version 3 of the app.' + '\n';
+    response = 'This is version 500 of the app.' + '\n';
 
     //send the response to the client
     res.send(response);
