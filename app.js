@@ -1,8 +1,12 @@
 const express = require("express");
 const app = express();
+const IP = require("ip");
+const os = require("os");
 
 app.get("/", function (req, res) {
-  res.send("Hello, World!\n");
+  const ipAddress = IP.address();
+  const hostName = os.hostname();
+  res.send("I am running on   " + hostName + "   ->    " + ipAddress);
 });
 
 app.get("/mars", function (req, res) {
