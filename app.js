@@ -6,7 +6,7 @@ const os = require("os");
 app.get("/", function (req, res) {
   const ipAddress = IP.address();
   const hostName = os.hostname();
-  res.send("I am running on   " + hostName + "   ->    " + ipAddress);
+  res.send("I am running on host :  " + hostName + "   ->    " + ipAddress);
 });
 
 app.get("/mars", function (req, res) {
